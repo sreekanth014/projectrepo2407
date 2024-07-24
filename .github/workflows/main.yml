@@ -1,0 +1,16 @@
+# project-repo/.github/workflows/main.yml
+
+name: Main Workflow
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  call-reusable-workflow:
+    uses: sreekanth014/2407reusable/.github/workflows/build-test.yml@master
+    with:
+      project-dir: .
+    secrets:
+      token: ${{ secrets.GITHUB_TOKEN }}
