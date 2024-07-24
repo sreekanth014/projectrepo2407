@@ -1,6 +1,6 @@
 # project-repo/.github/workflows/main.yml
 
-name: Main Workflow
+name: Main Workflows
 
 on:
   push:
